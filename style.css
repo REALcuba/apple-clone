@@ -117,8 +117,10 @@ main{
     width: 600px;
 
 }
-@media screen {
-    
+@media screen(min-width = 540px) {
+    .valentines-day-last-chance {
+Width = 540px
+}
 }
 .subhead{
     font-size: 24px;
