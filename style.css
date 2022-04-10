@@ -30,14 +30,26 @@ main{
     display: block;
     }
 
-
+ @media(min-width: 1280px) {
+    .navigationBar{
+        display: flex;
+    }
+    .navigationBar ul{
+        display:flex;
+       
+    }
+}
 .navigationBar ul{
     list-style: none;
     margin: 0;
-    display: flex;
+    display: grid;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;;
     position: relative;
+}
+@media (min-width:700px) {
+    .navigationBar ul{
+        display: flex;}
 }
 .navLi{
     font-size: 12px;
@@ -62,7 +74,18 @@ main{
     display: inline-block;
     position: relative;
     
-    
+   }
+   .navBag{
+       
+       background-image: url(https://thumbs.dreamstime.com/z/shopping-bag-icon-trendy-logo-concept-white-bac-background-marketing-collection-suitable-use-web-apps-mobile-print-131178216.jpg;)
+   }
+   @media (min-width:700px) {
+       .navLi{
+           visibility:hidden
+       }
+       .navBag{
+       visibility: show;
+   }
    }
 .nav__link__search{
     background-size: 15px 88px;
@@ -117,11 +140,11 @@ main{
     width: 600px;
 
 }
-@media screen(min-width = 540px) {
+/* @media (min-width = 540px) {
     .valentines-day-last-chance {
-Width = 540px
+
 }
-}
+} */
 .subhead{
     font-size: 24px;
     line-height: 1.16667;
